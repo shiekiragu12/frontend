@@ -1,0 +1,21 @@
+@use'sidebar';
+@use'navbar';
+//variables
+
+//end of variables
+main{
+  &.is-expanded {
+    .sh-body{
+      padding-left: sidebar.$maxwidth;
+    }
+  }
+  .sh-body{
+    padding-left: sidebar.$minwidth;
+    margin-top: -40px;
+
+    @media screen and (max-width: 1000px){
+      margin-top: 60px;
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+<!--      <link rel="stylesheet" href="/frontend/src/resources/assets/styles.scss">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scss Variables working</title>
+      <script>
+        window.VITE_APP_API_URL = 'http://127.0.0.1:8000/api/'
+        window.VITE_APP_API_PRODUCTION_URL = 'http://127.0.0.1:8000/api/'
+        if (window.location.href.includes('pages')) {
+          window.VITE_APP_API_URL = 'http://127.0.0.1:8000/api/'
+          window.VITE_APP_API_PRODUCTION_URL = 'http://127.0.0.1:8000/api/'
+        }
+      </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

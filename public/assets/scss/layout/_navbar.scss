@@ -1,0 +1,54 @@
+//variables
+$height-desktop:24px;
+$height-phone:50px;
+//variables
+
+header{
+  &.is-expanded {
+    .sh-navbar{
+      //background-color: #405189;;
+      //background-color: #f5f3ff;
+      background-color: #d7e4ff;
+      position: fixed;
+      top: 0;
+      z-index: 1020;
+      padding: 0rem;
+      width: min(100%,20000px);
+      border-bottom: 1px solid lightgrey;
+    }
+    .checks {
+      width: 372% !important;
+      padding: 0.5rem;
+      margin-top: -0.5rem;
+      margin-inline: -1rem;
+      //background-color: #405189;
+    }
+  }
+  .sh-navbar{
+    background-color: #d7e4ff;
+    position: fixed;
+    top: 0;
+    z-index: 1020;
+    width: min(100%,20000px);
+    border-bottom: 1px solid lightgrey;
+  }
+  .sh-navcontainer{
+    height: $height-desktop;
+    @media screen and (max-width:991px) {
+      height: $height-phone;
+    }
+
+  }
+  .s-logo {
+    width: 70px;
+    position: absolute;
+    left: 0;
+    margin-top: 0.3rem;
+    margin-left: 1rem;
+
+    @media screen and (max-width:991px) {
+      display: none;
+    }
+  }
+}
+
